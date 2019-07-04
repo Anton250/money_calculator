@@ -1,0 +1,144 @@
+<resources>
+    <string name="app_name">Money Calculator</string>
+    <string name="button_add">buttonAdd</string>
+    <string name="back">Назад</string>
+    <string name="rubles">₽</string>
+    <string-array name="values">
+        <item>Расход</item>
+        <item>Доход</item>
+    </string-array>
+    <string-array name="types">
+        <item>Временный</item>
+        <item>Постоянный</item>
+    </string-array>
+    <string name="balance">Остаток: </string>
+    <string name="tagAdditional">Дополнительно</string>
+    <string name="addNewMonth">Добавить новый месяц</string>
+    <string-array name="TagsTempCosts">
+        <item>Связь</item>
+        <item>Детский сад</item>
+        <item>Школа</item>
+        <item>Интернет</item>
+        <item>Квартплата</item>
+        <item>Гараж</item>
+        <item>Электроэнергия</item>
+        <item>Проездной</item>
+        <item>Питание</item>
+        <item>Авто</item>
+        <item>Красота и здоровье</item>
+        <item>Прочие расходы</item>
+    </string-array>
+    <string-array name="TagsIncomes">
+        <item>Зарплата</item>
+        <item>Аванс</item>
+        <item>Процент по вкладу</item>
+        <item>Прочее</item>
+        <item>Остаток на начало месяца</item>
+    </string-array>
+    <string-array name="TagsConstCosts">
+        <item>Связь</item>
+        <item>Детский сад</item>
+        <item>Школа</item>
+        <item>Интернет</item>
+        <item>Квартплата</item>
+        <item>Гараж</item>
+        <item>Электроэнергия</item>
+        <item>Кредит</item>
+        <item>Проездной</item>
+        <item>Питание</item>
+        <item>Авто</item>
+        <item>Красота и здоровье</item>
+    </string-array>
+    <string-array name="ColorsTempCosts">
+        <item>#FFC618</item>
+        <item>#ABDEBA</item>
+        <item>#D5ABDE</item>
+        <item>#6978E8</item>
+        <item>#69E86B</item>
+        <item>#C90D30</item>
+        <item>#DFF59E</item>
+        <item>#2B00AD</item>
+        <item>#DFFBA9</item>
+        <item>#4d5645</item>
+        <item>#999999</item>
+        <item>#004083</item>
+    </string-array>
+    <string-array name="ColorsConstCosts">
+        <item>#D49BF3</item>
+        <item>#EF7957</item>
+        <item>#FFDD33</item>
+        <item>#399191</item>
+        <item>#0C4D0D</item>
+        <item>#C90D9A</item>
+        <item>#831717</item>
+        <item>#41FF3D</item>
+        <item>#EC7582</item>
+        <item>#7d746d</item>
+        <item>#957b8d</item>
+        <item>#64F8FF</item>
+    </string-array>
+    <string-array name="allCosts">
+        <item>Связь ⌛ </item>
+        <item>Детский сад ⌛ </item>
+        <item>Школа ⌛ </item>
+        <item>Интернет ⌛ </item>
+        <item>Квартплата ⌛ </item>
+        <item>Гараж ⌛ </item>
+        <item>Электроэнергия ⌛ </item>
+        <item>Проездной ⌛ </item>
+        <item>Питание ⌛ </item>
+        <item>Авто ⌛ </item>
+        <item>Красота и здоровье ⌛ </item>
+        <item>Прочие расходы ⌛ </item>
+
+        <item>Связь</item>
+        <item>Детский сад</item>
+        <item>Школа</item>
+        <item>Интернет</item>
+        <item>Квартплата</item>
+        <item>Гараж</item>
+        <item>Электроэнергия</item>
+        <item>Кредит</item>
+        <item>Проездной</item>
+        <item>Питание</item>
+        <item>Авто</item>
+        <item>Красота и здоровье</item>
+    </string-array>
+    <string-array name="months">
+        <item>Январь</item>
+        <item>Февраль</item>
+        <item>Март</item>
+        <item>Апрель</item>
+        <item>Май</item>
+        <item>Июнь</item>
+        <item>Июль</item>
+        <item>Август</item>
+        <item>Сентябрь</item>
+        <item>Октябрь</item>
+        <item>Ноябрь</item>
+        <item>Декабрь</item>
+    </string-array>
+    <string name="temp">Временные:</string>
+    <string name="constCost">Постоянные:</string>
+    <string name="add">Добавить</string>
+    <string name="addCost">Добавить расход</string>
+    <string name="addIncome">Добавить доход</string>
+    <string name="editConstCost">Редактировать постоянные расходы</string>
+    <string name="editConstIncome">Редактировать постоянные доходы</string>
+    <string name="editTempIncome">Редактировать текущие доходы</string>
+    <string name="editTempCosts">Редактировать текущие расходы</string>
+    <string name="additional">Дополнительно</string>
+    <string name="costs">Расходы</string>
+    <string name="months">Месяцы</string>
+    <string name="currentIncomes">Текущие доходы</string>
+    <string name="confirm">Ок</string>
+    <string name="edit">Редактировать</string>
+    <string name="cancel">Отмена</string>
+    <string name="skip">Пропустить</string>
+    <string name="addToCurrentMonth">Доавить в текущий месяц</string>
+    <string name="search">Поиск по комменатриям</string>
+    <string name="startUpLogo">Привет! Спасибо за установку приложения Money Calculator!
+    Для начала необходимо ввести остаточные накопления:</string>
+    <string name="startUpIncome">Введите постоянные доходы(впоследствии их можно будет редактировать):</string>
+    <string name="startUpCosts">Введите постоянные расходы(впоследствии их можно будет редактировать):</string>
+</resources>

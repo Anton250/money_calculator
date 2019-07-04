@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/monthFragment">
+    <fragment
+        android:id="@+id/monthFragment"
+        android:name="com.netproj.moneycalculator.CurrentMonthGraph"
+        android:label="@string/costs"
+
+        tools:layout="@layout/fragment">
+        <action
+            android:id="@+id/action_monthFragment_to_addNewInfoFragment"
+            app:destination="@id/addNewInfoFragment" />
+        <action
+            android:id="@+id/action_monthFragment_to_editNewInformationFragment"
+            app:destination="@id/editNewInformationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editInformationFragment"
+        android:name="com.netproj.moneycalculator.EditInformationFragment"
+        android:label="@string/edit"
+        android:fragmentEnterTransition="@anim/no_animation"
+        android:fragmentExitTransition="@anim/no_animation"
+        tools:layout="@layout/window_edit" >
+        <action
+            android:id="@+id/action_editInformationFragment_to_addNewInfoFragment"
+            app:destination="@id/addNewInfoFragment" />
+        <action
+            android:id="@+id/action_editInformationFragment_to_editNewInformationFragment"
+            app:destination="@id/editNewInformationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/monthsListFragment"
+        android:name="com.netproj.moneycalculator.MonthsListFragment"
+        android:label="@string/months"
+        android:fragmentEnterTransition="@anim/no_animation"
+        android:fragmentExitTransition="@anim/no_animation"
+        tools:layout="@layout/list_view" >
+        <action
+            android:id="@+id/action_monthsListFragment_to_monthGraphShowFragment"
+            app:destination="@id/monthGraphShowFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNewInfoFragment"
+        android:name="com.netproj.moneycalculator.AddNewInfoFragment"
+        tools:layout="@layout/add_info">
+        <argument
+            android:name="type"
+            android:defaultValue="1"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/monthGraphShowFragment"
+        android:name="com.netproj.moneycalculator.MonthGraphShowFragment"
+        android:label="@string/months"
+        tools:layout="@layout/main_window_fragment">
+        <argument
+            android:name="month_id"
+            android:defaultValue="1"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/editNewInformationFragment"
+        android:name="com.netproj.moneycalculator.EditNewInformationFragment"
+        tools:layout="@layout/list_view">
+        <argument
+            android:name="type"
+            android:defaultValue="1"
+            app:argType="integer" />
+        <argument
+            android:name="c_type"
+            android:defaultValue="1"
+            app:argType="integer" />
+        <argument
+            android:name="month_id"
+            android:defaultValue="1"
+            app:argType="integer" />
+        <argument
+            android:name="subtype"
+            android:defaultValue="1"
+            app:argType="integer" />
+    </fragment>
+</navigation>

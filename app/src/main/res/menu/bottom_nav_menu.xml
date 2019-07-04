@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@id/monthFragment"
+        android:icon="@android:drawable/ic_menu_view"
+        android:title="@string/costs"
+        />
+    <item
+        android:id="@id/monthsListFragment"
+        android:icon="@android:drawable/ic_menu_today"
+        android:title="@string/months" />
+    <item
+        android:id="@id/editInformationFragment"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="@string/edit" />
+</menu>

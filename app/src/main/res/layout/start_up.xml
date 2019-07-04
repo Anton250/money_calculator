@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/startUpBalance"
+        android:layout_width="189dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/rubles"
+        android:inputType="number"
+        android:maxLength="6"
+        android:textAlignment="viewEnd"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startUpLogo" />
+
+    <TextView
+        android:id="@+id/startUpLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/startUpLogo"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonStartupAddBalance"
+        style="@style/RoundedCornerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="92dp"
+        android:text="@string/confirm"
+        app:layout_constraintStart_toEndOf="@+id/startUpBalance"
+        app:layout_constraintTop_toBottomOf="@+id/startUpLogo" />
+
+    <Button
+        android:id="@+id/buttonStartUpStart"
+        style="@style/RoundedCornerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Начать"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="135dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/buttonSkip"
+        style="@style/linkColorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/skip"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.339"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startUpBalance" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

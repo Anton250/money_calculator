@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/search_value">
+        <item
+            android:id="@+id/action_search"
+            android:icon="@drawable/search_icon"
+            android:title="@string/search"
+            app:actionViewClass="androidx.appcompat.widget.SearchView"
+            app:showAsAction="always"/>
+    </group>
+    <group android:id="@+id/edit_values"
+        android:menuCategory="container">
+        <item
+            android:id="@+id/action_cancel"
+            android:icon="@drawable/cross"
+            app:showAsAction="always"
+            android:title="@string/cancel"
+           />
+        <item android:id="@+id/action_confirm"
+            android:title="@string/confirm"
+            android:icon="@drawable/check_mark"
+            app:showAsAction="always"
+            />
+
+    </group>
+</menu>

@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/gray</item>
+    </style>
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:background">@drawable/background_loader</item>
+    </style>
+    <style name="RoundedCornerButton" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/btn_rounded_corner</item>
+        <item name="android:colorButtonNormal">@color/colorPrimary</item>
+        <item name="colorControlHighlight">#673ab7</item>
+    </style>
+    <style name="linkColorButton" parent="@style/Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:color">@color/colorPrimary</item>
+        <item name="android:colorBackground">@color/colorPrimary</item>
+        <item name="android:colorButtonNormal">@color/colorPrimary</item>
+        <item name="colorControlHighlight">#673ab7</item>
+    </style>
+
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:scrollbarSize="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/MonthAndYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/app_name"
+            android:textColor="#000000" />
+
+        <lecho.lib.hellocharts.view.PieChartView
+            android:id="@+id/chart"
+            android:layout_width="363dp"
+            android:layout_height="326dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="24dp">
+
+        </lecho.lib.hellocharts.view.PieChartView>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/balance"
+            android:textColor="#000000"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnShowIncomes"
+            style="@style/linkColorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/currentIncomes"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/btnAddCostInMonth"
+            style="@style/linkColorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/addCost"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/constCost"
+            android:textColor="#000000" />
+
+        <com.netproj.moneycalculator.NonScrollableListView
+            android:id="@+id/legendConstListView"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="10dp"
+            android:background="#00FFFFFF"
+            android:isScrollContainer="false"
+            android:scrollbars="none">
+
+        </com.netproj.moneycalculator.NonScrollableListView>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/temp"
+            android:textColor="#000000" />
+
+        <com.netproj.moneycalculator.NonScrollableListView
+            android:id="@+id/legendTmpListView"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:isScrollContainer="false"
+            android:scrollbars="none">
+
+        </com.netproj.moneycalculator.NonScrollableListView>
+
+    </LinearLayout>
+</ScrollView>
+
+
